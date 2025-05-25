@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import ThePageHeader from './ThePageHeader.vue'
+import ThePageHeader from '@Layouts/ThePageHeader.vue'
 import Navbar from '@/components/Navbar.vue'
 </script>
 
