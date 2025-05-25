@@ -128,81 +128,23 @@ const selectCourse = (course) => {
 
 <style scoped>
 /* Main sidebar styling */
+/* In your Navbar.vue */
 .navbar {
-  width: 312px;
-  height: calc(100vh - 40px);
-  position: fixed;
-  left: 30px;
-  top: 20px;
-  z-index: 40;
+  background-color: #D0DFCC;
   border-radius: 21px;
   padding: 16px 0;
+  height: 100%;
 }
 
-/* Logo container styling */
-.logo-section {
-  min-height: 80px; /* Give enough space for the logo */
-  padding: 0 1rem; /* Adjust padding as needed */
-}
-/* Navigation item styling */
 .nav-item {
-  margin: -20px;
-  position: relative;
-  left: -12px;
-  width: calc(100% - 16px);
+  /* Your existing nav item styles */
   color: #212121;
+  padding: 12px 24px;
+  margin: 8px 0;
 }
 
-/* Hover state for navigation items */
-.nav-item:hover {
-  border-radius: 10px;
-  background-color: rgba(236, 236, 236, 0.831);
-}
-
-/* Active state for navigation items */
-.active-nav-item .nav-item {
+.active-nav-item {
   background-color: white;
-  color: #1f2937; /* gray-800 */
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  border-radius: 10px;
-  transform: translateX(-4px);
-}
-
-.course-nav {
-  border-left: 2px solid rgba(0, 0, 0, 0.1);
-  margin-top: 4px;
-  margin-left: 0; /* Remove extra left margin */
-  padding-left: 8px; /* Add some padding instead */
-}
-
-/* Make course nav items consistent with main nav items */
-.course-nav-item {
-  padding: 12px 16px; /* Match main nav padding */
-  margin: 4px 0; /* Consistent vertical spacing */
-  margin-left: 0; /* Remove negative margin */
-  color: #212121;
-  cursor: pointer;
-  border-radius: 6px;
-  display: flex; /* Match main nav layout */
-  align-items: center; /* Center items vertically */
-  transition: all 0.2s ease; /* Smooth transitions */
-  width: 100%; /* Full width */
-}
-
-/* Active state for course pages */
-.active-course-item,
-.active-course-item:hover {
-  background-color: white;
-  color: #1f2937;
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  border-radius: 6px;
-  font-weight: 500;
-  transform: translateX(-4px); /* Match main nav active state */
-}
-
-/* Back button styling */
-.course-nav-item.font-semibold {
-  padding-left: 12px; /* Slightly more padding for back button */
-  margin-bottom: 8px; /* Extra space below back button */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 </style>
